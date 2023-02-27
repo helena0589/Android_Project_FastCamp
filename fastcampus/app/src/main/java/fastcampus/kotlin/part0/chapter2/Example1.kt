@@ -15,8 +15,25 @@ fun main(){
     val d = {i : Int, j : Int -> i*j} // b와 d 중 하나의 형식으로는 변수타입 지정
     val f :(Int, String, Boolean) -> String = {_, b, _-> b} // 사용하지 않는 변수는 underscore로 생략 가능
 
-    println(b) // 코드 조각 자체가 출력됨
-    println(b(10)) // 람다 코드 실행
+
+
+    println("a 출력")
+    print("a() : ")
+    a()
+    println("println(a) : $a")
+    println("println(a()) : " + a())
+    println()
+
+    println("b 출력")
+    print("b(10) : ")
+    b(10)
+    println()
+    println("b : $b") // 코드 조각 자체가 출력됨
+    println("b(10) : " + b(10)) // 람다 코드 실행
+    println()
+
+    println("f(10, \"HI\", true) : " + f(10, "HI", true))
+    println()
 
     hello(10, b)
 }
