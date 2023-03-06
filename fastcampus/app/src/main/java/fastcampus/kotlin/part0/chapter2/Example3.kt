@@ -69,10 +69,14 @@ fun main() {
 
     //apply를 사용한 객체 속성 초기화
     val female = User("슬기", 20, true, true)
+    println(female.hasGlasses)
+
     val femaleValue = female.apply {
         hasGlasses = false
     }
+    println("femaleValue : $femaleValue")
     println(femaleValue.hasGlasses)
+    println(female.hasGlasses)
 
     // 4. also
     /*
