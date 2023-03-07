@@ -22,7 +22,7 @@ fun main(){
     목적 : 메모리를 효율적으로 사용하기 위해서 / null safet 한 value를 사용하기 위해서
     1) lateinit, var
         - 변수 타입을 지정해야함
-        - prrimitive type 지정은 불가능 (참조 타입 변경 혹은 값 할당 필요)
+        - primitive type 지정은 불가능 (참조 타입 변경 혹은 값 할당 필요)
         - 선언 후 나중에 초기화 해줘도 됨
     2) lazy, val
         - 선언과 동시에 초기화 필요
