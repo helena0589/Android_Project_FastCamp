@@ -51,6 +51,8 @@ class Person(
     val name : String,
     val age : Int
 )
+//class Cat() // 일반 클래스는 프로퍼티가 없어도 됨
+
 // dataClass 하나 이상의 프로퍼티가 필요함
 data class Dog(
     val name : String,
@@ -61,7 +63,6 @@ data class Dog(
         return "이름 : $name"
     }
 }
-//class Cat() // 일반 클래스는 프로퍼티가 없어도 됨
 
 /* 상속 불가능
 data class Corgi(
@@ -70,7 +71,7 @@ data class Corgi(
 */
 
 
-//Sealed Class
+// 2) Sealed Class
 sealed class Cat
 class BlueCat : Cat()
 class RedCat : Cat()
